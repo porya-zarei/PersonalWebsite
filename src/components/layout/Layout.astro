@@ -1,0 +1,20 @@
+---
+import MetaLayout from "./MetaLayout.astro";
+import HeaderLayout from "./HeaderLayout.astro";
+import FooterLayout from "./FooterLayout.astro";
+import MainLayout from "./MainLayout.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <MetaLayout/>
+</head>
+<body>
+    <HeaderLayout/>
+    <MainLayout>
+        <slot/>
+    </MainLayout>
+    <FooterLayout/>
+</body>
+</html>
