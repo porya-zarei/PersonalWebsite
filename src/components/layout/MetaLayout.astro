@@ -1,12 +1,14 @@
 ---
+// import "../../styles/global.css";
 const {title = "Porya Zarei Personal Website"} = Astro.props;
 ---
 
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 <title>{title}</title>
-<meta name="description" content="">
-<style global lang="scss">
-	@import "../../styles/global.scss";
+<meta name="description" content=""/>
+<link rel="stylesheet" type="text/css" href={Astro.resolve('../../styles/global.css')} />
+<style global>
+	@import "../../styles/global.css";
 </style>
