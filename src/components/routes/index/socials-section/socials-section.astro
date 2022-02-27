@@ -1,0 +1,29 @@
+---
+import {SOCIALS} from "../../../../data/socials-data.tsx";
+import SocialCard from "../../../core-ui/social-card/social-card.tsx";
+---
+
+<section class="bg-indigo-900 text-white flex justify-center items-center flex-wrap pb-40 relative">
+    <div class="w-full flex justify-center items-center flex-wrap">
+        {SOCIALS.map(social => (
+            <div class="flex justify-center items-center content-center w-full sm:w-1/2 md:w-1/4">
+                <SocialCard social={social} />
+            </div>
+        ))}
+    </div>
+    <div class="absolute -bottom-12 w-full flex justify-center items-center">
+        <div class="w-full flex justify-center items-center flex-wrap max-w-xl m-auto rounded-md bg-indigo-700">
+            <h3 class="w-full text-2xl flex justify-center items-start px-2 py-4 text-center">
+                want to work together and create amazing products with me?
+            </h3>
+            <div class="w-full p-4 inline-block text-center whitespace-nowrap justify-center items-center">
+                <div class="w-full p-1 h-10 rounded-full flex justify-center items-center bg-black bg-opacity-10">
+                    <input placeholder="Quote ..." type="text" class="bg-transparent border-none outline-none w-full h-full p-1" />
+                    <button class="bg-indigo-500 rounded-full py-2 px-3 h-full flex-1 inline-flex justify-center items-center">
+                        Get a quote
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -3,6 +3,7 @@ export interface SocialData {
     title: string;
     text: string;
     icon: JSX.Element;
+    color: string;
 }
 
 const GithubIcon = (
@@ -79,23 +80,27 @@ export const SOCIALS: SocialData[] = [
         title: "Github",
         text: "Follow me on Github",
         icon: GithubIcon,
+        color: "text-black",
     },
     {
         href: "https://www.linkedin.com/in/porya-zarei/",
         title: "LinkedIn",
         text: "Connect with me on LinkedIn",
         icon: LinkedInIcon,
+        color: "text-blue-700",
     },
     {
         href: "https://www.instagram.com/porya._.za/",
         title: "Instagram",
         text: "Follow me on Instagram",
         icon: InstagramIcon,
+        color: "text-pink-500",
     },
     {
         href: "https://twitter.com/porya_Zarei",
         title: "Twitter",
         text: "Follow me on Twitter",
         icon: TwitterIcon,
+        color: "text-blue-400",
     },
 ];
