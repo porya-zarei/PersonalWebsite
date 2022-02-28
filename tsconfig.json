@@ -4,6 +4,6 @@
         "forceConsistentCasingInFileNames": true,
         "strict": true,
         "importHelpers": true,
-        "target": "ES6",
+        "target": "ESNext"
     }
 }

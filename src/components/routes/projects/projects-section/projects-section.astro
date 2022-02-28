@@ -1,0 +1,16 @@
+---
+import ProjectCard from "../../../core-ui/project-card/project-card.tsx";
+import {getGithubRepositories} from "../../../../api-calls/get-github-repositories.ts";
+import {GITHUB_USERNAME} from "../../../../configs/globals.ts";
+const REPOSITORIES = await getGithubRepositories(GITHUB_USERNAME);
+---
+
+<section class="w-full flex justify-center items-center mt-2 mx-auto px-4 lg:px-8">
+    <div class="w-full mt-12 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+        {
+            REPOSITORIES.map((repository) => (
+                <ProjectCard repository={repository}/>
+            ))
+        }
+    </div>
+</section>

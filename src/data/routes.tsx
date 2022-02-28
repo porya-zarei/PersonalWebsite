@@ -9,12 +9,12 @@ export const ROUTES: IRoute[] = [
         title: "Home",
     },
     {
-        path: "/about",
-        title: "About",
+        path: "/about-me",
+        title: "About Me",
     },
     {
-        path: "/contact",
-        title: "Contact",
+        path: "/contact-me",
+        title: "Contact Me",
     },
     {
         path: "/projects",
