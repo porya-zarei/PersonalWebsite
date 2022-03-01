@@ -19,3 +19,8 @@ body {
 	width: 100%;
     font-family: sans-serif,'Times New Roman', Times, serif;
 }
+
+.after-bg-linear::after{
+    background-image: linear-gradient(to bottom, #b3b3b300, #ffffff);
+    /* backdrop-filter: blur(2px); */
+}

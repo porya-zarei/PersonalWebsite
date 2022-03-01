@@ -1,7 +1,7 @@
 ---
 import ProjectCard from "../../../core-ui/project-card/project-card.tsx";
 import {getGithubRepositories} from "../../../../api-calls/get-github-repositories.ts";
-import {GITHUB_USERNAME} from "../../../../configs/globals.ts";
+import {GITHUB_USERNAME} from "../../../../data/socials-data.tsx";
 const REPOSITORIES = await getGithubRepositories(GITHUB_USERNAME);
 ---
 

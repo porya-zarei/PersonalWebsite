@@ -9,8 +9,8 @@ export const ROUTES: IRoute[] = [
         title: "Home",
     },
     {
-        path: "/about-me",
-        title: "About Me",
+        path: "/about",
+        title: "About",
     },
     {
         path: "/contact-me",
@@ -20,8 +20,8 @@ export const ROUTES: IRoute[] = [
         path: "/projects",
         title: "Projects",
     },
-    {
-        path: "/blog",
-        title: "Blog",
-    },
+    // {
+    //     path: "/blog",
+    //     title: "Blog",
+    // },
 ];

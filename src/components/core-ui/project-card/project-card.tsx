@@ -11,7 +11,7 @@ const ProjectCard: FC<ProjectCardProps> = ({repository}) => {
             <a className="w-full" href={repository.html_url}>
                 <div className="w-full p-3 bg-white">
                     <img
-                        src={"/assets/images/github.png"}
+                        src={"./assets/images/github.png"}
                         loading="lazy"
                         alt={repository.full_name}
                         className="w-full h-32 rounded-t-md drop-shadow-xl"

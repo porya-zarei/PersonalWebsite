@@ -1,3 +1,12 @@
+export const GITHUB_USERNAME = "porya-zarei";
+export const GMAIL = "pzeinstein@gmail.com";
+export const PHONENUMBER = "09152508737";
+export const LINKEDIN = "https://www.linkedin.com/in/porya-zarei/";
+export const INSTAGRAM = "https://www.instagram.com/porya._.za/";
+export const TWITTER = "https://twitter.com/porya_Zarei";
+export const GITHUB = `https://github.com/${GITHUB_USERNAME}`;
+export const ADDRESS = "Neyshabour, Tehran, Iran";
+
 export interface SocialData {
     href: string;
     title: string;
@@ -76,28 +85,28 @@ const TwitterIcon = (
 
 export const SOCIALS: SocialData[] = [
     {
-        href: "https://github.com/porya-zarei",
+        href:GITHUB ,
         title: "Github",
         text: "Follow me on Github",
         icon: GithubIcon,
         color: "text-black",
     },
     {
-        href: "https://www.linkedin.com/in/porya-zarei/",
+        href: LINKEDIN,
         title: "LinkedIn",
         text: "Connect with me on LinkedIn",
         icon: LinkedInIcon,
         color: "text-blue-700",
     },
     {
-        href: "https://www.instagram.com/porya._.za/",
+        href: INSTAGRAM,
         title: "Instagram",
         text: "Follow me on Instagram",
         icon: InstagramIcon,
         color: "text-pink-500",
     },
     {
-        href: "https://twitter.com/porya_Zarei",
+        href: TWITTER,
         title: "Twitter",
         text: "Follow me on Twitter",
         icon: TwitterIcon,

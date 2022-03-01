@@ -7,7 +7,9 @@ const Navbar: FC<NavbarProps> = () => {
     const [showNavList, setShowNavList] = useState(false);
     return (
         <nav className="z-50 bg-white w-full flex justify-between items-center flex-wrap md:flex-nowrap py-2 px-12 shadow-md">
-            <div className="order-1 font-mono">Porya</div>
+            <div className="order-1 font-mono">
+                <img src="./assets/images/logo.png" className="h-10" alt="logo" />
+            </div>
             <NavList showNavList={showNavList} />
             <div className="order-2 md:order-3 flex justify-center items-center">
                 <button
