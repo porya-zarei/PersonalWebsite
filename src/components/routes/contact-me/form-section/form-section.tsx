@@ -88,7 +88,7 @@ const FormSection: FC<FormSectionProps> = () => {
                         }`}>
                         <textarea
                             className="w-full bg-transparent border-none outline-none"
-                            rows={5}
+                            rows={6}
                             value={message}
                             onChange={onMessageChange}
                             placeholder="message ..."></textarea>

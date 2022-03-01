@@ -1,0 +1,54 @@
+{
+    "short_name": "PZE",
+    "name": "Porya Zarei Personal Website",
+    "start_url": "/index.html",
+    "scope": "/",
+    "description": "Porya Zarei's Application. Hello , Welcome to my personal website.",
+    "categories": ["technology", "personal website", "programming", "Porya Zarei"],
+    "icons": [
+        {
+            "src": "./assets/images/logo.png",
+            "type": "vector/svg",
+            "sizes": "*x*"
+        }
+    ],
+    "display": "standalone",
+    "orientation": "any",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "dir": "ltr",
+    "lang": "en-us",
+    "shortcuts": [
+        {
+            "name": "Home",
+            "url": "/",
+            "description": "Home Page",
+            "icons": [
+                {"src": "./assets/images/logo.png", "sizes": "165x165"}
+            ]
+        },
+        {
+            "name": "About",
+            "url": "/about",
+            "description": "About Page",
+            "icons": [
+                {"src": "./assets/images/logo.png", "sizes": "165x165"}
+            ]
+        },
+        {
+            "name": "Contact",
+            "url": "/contact-me",
+            "description": "Contact me Page",
+            "icons": [
+                {"src": "./assets/images/logo.png", "sizes": "165x165"}
+            ]
+        },{
+            "name": "projects",
+            "url": "/projects",
+            "description": "Projects Page",
+            "icons": [
+                {"src": "./assets/images/logo.png", "sizes": "165x165"}
+            ]
+        }
+    ]
+}
