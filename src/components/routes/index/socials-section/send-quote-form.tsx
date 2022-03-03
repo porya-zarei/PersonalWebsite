@@ -27,7 +27,9 @@ const SendQuoteForm: FC<SendQuoteFormProps> = () => {
         setIsLoading(false);
     };
     return (
-        <div className="w-full flex justify-center items-center flex-wrap max-w-xl m-auto rounded-md bg-indigo-700">
+        <div
+            id="get-quote-container"
+            className="w-full flex justify-center items-center flex-wrap max-w-xl m-auto rounded-md bg-indigo-700">
             <h3 className="w-full text-2xl flex justify-center items-start px-2 py-4 text-center">
                 want to work together and create amazing products with me?
             </h3>

@@ -6,9 +6,13 @@ interface NavbarProps {}
 const Navbar: FC<NavbarProps> = () => {
     const [showNavList, setShowNavList] = useState(false);
     return (
-        <nav className="z-50 bg-white w-full flex justify-between items-center flex-wrap md:flex-nowrap py-2 px-12 shadow-md">
+        <nav className="z-[100] bg-white w-full flex justify-between items-center flex-wrap md:flex-nowrap py-2 px-12 shadow-md">
             <div className="order-1 font-mono">
-                <img src="./assets/images/logo.png" className="h-10" alt="logo" />
+                <img
+                    src="./assets/images/logo.png"
+                    className="h-10"
+                    alt="logo"
+                />
             </div>
             <NavList showNavList={showNavList} />
             <div className="order-2 md:order-3 flex justify-center items-center">
@@ -44,11 +48,12 @@ const Navbar: FC<NavbarProps> = () => {
                         </svg>
                     )}
                 </button>
-                <button
+                <a
                     type="button"
-                    className="hidden md:flex py-2 px-3 rounded-full bg-indigo-700 text-white">
+                    href="#get-quote-container"
+                    className="hidden hover:animate-bounce md:flex py-2 px-3 rounded-full bg-indigo-700 text-white">
                     Let's Talk
-                </button>
+                </a>
             </div>
         </nav>
     );
