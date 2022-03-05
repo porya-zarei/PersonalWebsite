@@ -1,13 +1,16 @@
 ---
 import Fields from "./fields.tsx";
+import TypeWriter from "../../../core-ui/type-writer/type-writer.tsx";
 ---
 
 
 <section class="w-full my-3 flex flex-wrap justify-center items-canter min-h-[80vh] h-[80vh] relative after:absolute after:bottom-0 after after:w-1/2 after:h-[2px] after:bg-slate-400 before:absolute before:top-0 before:w-1/2 before:h-[2px] before:bg-slate-400">
     <div class="w-full mb-4 md:mb-0 md:w-5/12 flex justify-center items-center flex-wrap content-center py-2 px-10">
-        <h2 class="w-full text-2xl mb-3 font-bold">
-            How can i help you?
-        </h2>
+        <div class="w-full text-2xl mb-3 font-bold">
+            <div class="w-fit">
+                <TypeWriter client:load content="How can i help you?" />
+            </div>
+        </div>
         <p class="w-full text-sm">
             I'm here to help you with your business.
             if you need a full dynamic website, I can help you with react, nextjs,...

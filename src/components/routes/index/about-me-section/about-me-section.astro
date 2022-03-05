@@ -1,9 +1,16 @@
+---
+import TypeWriter from "../../../core-ui/type-writer/type-writer.tsx";
+---
+
 <section class="w-full flex justify-center items-center min-h-screen h-screen pt-28 bg-[url(./images/PolygonLuminary.svg)] bg-cover">
     <div class="w-full flex justify-center items-center flex-wrap px-12 font-sans">
         <div class="w-full">
-            <h2 class="text-3xl font-extrabold mb-3">
-                About me <strong title="what do you want to know really?">?</strong>
-            </h2>
+            <div class="text-3xl w-fit font-extrabold mb-3">
+                <TypeWriter
+                    client:load
+                    content="About me ?"
+                />
+            </div>
         </div>
         <div class="w-full flex justify-start items-center">
             <p class="max-w-lg text-lg">
