@@ -1,8 +1,8 @@
 {
     "short_name": "PZE",
     "name": "Porya Zarei Personal Website",
-    "start_url": "/index.html",
-    "scope": "/",
+    "start_url": "./index.html",
+    "scope": "./",
     "description": "Porya Zarei's Application. Hello , Welcome to my personal website.",
     "categories": ["technology", "personal website", "programming", "Porya Zarei"],
     "icons": [
@@ -21,7 +21,7 @@
     "shortcuts": [
         {
             "name": "Home",
-            "url": "/",
+            "url": "./",
             "description": "Home Page",
             "icons": [
                 {"src": "./assets/images/logo.png", "sizes": "165x165"}
@@ -29,7 +29,7 @@
         },
         {
             "name": "About",
-            "url": "/about",
+            "url": "./about",
             "description": "About Page",
             "icons": [
                 {"src": "./assets/images/logo.png", "sizes": "165x165"}
@@ -37,14 +37,14 @@
         },
         {
             "name": "Contact",
-            "url": "/contact-me",
+            "url": "./contact-me",
             "description": "Contact me Page",
             "icons": [
                 {"src": "./assets/images/logo.png", "sizes": "165x165"}
             ]
         },{
             "name": "projects",
-            "url": "/projects",
+            "url": "./projects",
             "description": "Projects Page",
             "icons": [
                 {"src": "./assets/images/logo.png", "sizes": "165x165"}

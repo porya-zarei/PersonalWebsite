@@ -1,5 +1,5 @@
 import {FC} from "react";
-import { useElementIsInViewport } from "../../../hooks/use-element-is-in-viewport.tsx";
+import {useElementIsInViewport} from "../../../hooks/use-element-is-in-viewport";
 
 interface TypeWriterProps {
     type: "css" | "js";
@@ -8,7 +8,7 @@ interface TypeWriterProps {
 }
 
 const TypeWriter: FC<TypeWriterProps> = ({
-    content,
+    content = "",
     className = "",
     type = "css",
 }) => {
@@ -16,10 +16,11 @@ const TypeWriter: FC<TypeWriterProps> = ({
     return (
         <div
             ref={ref}
-            className={`w-fit ${className} ${isInViewPort && "type-writer"}`}>
+            className={`w-fit ${className} ${
+                isInViewPort ? "type-writer" : ""
+            }`}>
             {content}
         </div>
     );
 };
-
 export default TypeWriter;

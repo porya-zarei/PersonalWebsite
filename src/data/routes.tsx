@@ -9,15 +9,15 @@ export const ROUTES: IRoute[] = [
         title: "Home",
     },
     {
-        path: "/about",
+        path: "./about",
         title: "About",
     },
     {
-        path: "/contact-me",
+        path: "./contact-me",
         title: "Contact Me",
     },
     {
-        path: "/projects",
+        path: "./projects",
         title: "Projects",
     },
     // {

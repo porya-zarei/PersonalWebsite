@@ -1,18 +1,24 @@
 ---
 import Layout from "../components/layout/Layout.astro";
 import ProjectSection from "../components/routes/projects/projects-section/projects-section.astro";
-import {SOCIALS} from "../data/socials-data.tsx";
+import {SOCIALS} from "../data/socials-data";
 ---
 
 <Layout>
     <div class="w-full justify-center content-start mt-20">
         <section class="w-full flex justify-center items-center">
             <h2 class="w-full px-6 text-3xl font-bold">
-                You can find my projects on 
-                <a href={SOCIALS.find(item => item.title === "Github").href} class="text-indigo-700">GitHub</a>. <br/>
-                <span class="text-lg text-slate-600 px-2">feel free to use them in your projects.</span>
+                You can find my projects on
+                <a
+                    href={SOCIALS.find((item) => item.title === "Github")
+                        ?.href ?? ""}
+                    class="text-indigo-700">GitHub</a
+                >. <br />
+                <span class="text-lg text-slate-600 px-2"
+                    >feel free to use them in your projects.</span
+                >
             </h2>
         </section>
-        <ProjectSection/>
+        <ProjectSection />
     </div>
 </Layout>
